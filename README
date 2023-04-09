@@ -1,0 +1,14 @@
+/bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
+(echo; echo 'eval "$(/opt/homebrew/bin/brew shellenv)"') >> /Users/thanakij/.zprofile
+(echo; echo 'eval "$(/opt/homebrew/bin/brew shellenv)"') >> /Users/thanakij/.bash_profile
+eval "$(/opt/homebrew/bin/brew shellenv)"
+
+# https://itnext.io/upgrading-bash-on-macos-7138bd1066ba
+brew install bash
+sudo vim /etc/shells # add /opt/homebrew/bin/bash into the last line
+chsh -s /opt/homebrew/bin/bash
+
+# https://gist.github.com/ChristopherA/a579274536aab36ea9966f301ff14f3f
+# https://github.com/Homebrew/homebrew-bundle
+brew tap Homebrew/bundle
+brew bundle --file=./Brewfile
