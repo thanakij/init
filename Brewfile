@@ -1,6 +1,7 @@
 # https://medium.com/@satorusasozaki/automate-mac-os-x-configuration-by-using-brewfile-58a78ce5cc53
 
 # Packages
+brew 'grep' # https://superuser.com/a/419527
 brew 'git'
 brew 'bash-completion@2'
 brew 'docker-completion'
@@ -9,6 +10,7 @@ brew 'node'
 tap 'neovim/neovim' || true
 brew 'neovim'
 brew 'java'
+brew 'vips' # https://stackoverflow.com/a/66676895
 #brew 'jenkins'
 #brew 'wget'
 #brew 'graphviz'

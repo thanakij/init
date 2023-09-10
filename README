@@ -12,3 +12,99 @@ chsh -s /opt/homebrew/bin/bash
 # https://github.com/Homebrew/homebrew-bundle
 brew tap Homebrew/bundle
 brew bundle --file=./Brewfile
+
+export C_INCLUDE_PATH="${HOMEBREW_PREFIX}/include:${C_INCLUDE_PATH}"
+export CPLUS_INCLUDE_PATH="${HOMEBREW_PREFIX}/include:${CPLUS_INCLUDE_PATH}"
+export CPLUS_INCLUDE_PATH="${HOMEBREW_PREFIX}/Cellar/glib/2.76.3/include/glib-2.0:${CPLUS_INCLUDE_PATH}"
+export CPLUS_INCLUDE_PATH="${HOMEBREW_PREFIX}/Cellar/glib/2.76.3/lib/glib-2.0/include:${CPLUS_INCLUDE_PATH}"
+export LIBRARY_PATH="${HOMEBREW_PREFIX}/lib:${LIBRARY_PATH}"
+export LD_LIBRARY_PATH="${HOMEBREW_PREFIX}/lib:${LD_LIBRARY_PATH}"
+
+# VS Code extensions: aws, azure, docker, devcontainer, prettier, formatting toggle
+
+# AWS CLI
+brew install aws-cli
+# Session Manager plugin for the AWS CLI
+# - https://docs.aws.amazon.com/systems-manager/latest/userguide/session-manager-working-with-install-plugin.html#install-plugin-macos
+
+# Firebase CLI
+brew install firebase-cli
+
+# Azure developer CLI
+curl -fsSL https://aka.ms/install-azd.sh | bash
+
+# Space CLI
+curl -fsSL https://deta.space/assets/space-cli.sh | sh
+space login
+
+# CocoaPods
+sudo gem install cocoapods
+sudo gem install activesupport -v 6.1.7.3
+
+# https://stackoverflow.com/a/50556334
+#npm install -g prettier@1.12.1
+
+npm install -g create-next-app
+
+# https://github.com/junegunn/vim-plug#neovim
+sh -c 'curl -fLo "${XDG_DATA_HOME:-$HOME/.local/share}"/nvim/site/autoload/plug.vim --create-dirs \
+       https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim'
+echo 'Run :PlugInstall under nvim'
+echo :UpdateRemotePlugins
+echo :Neoformat prettier
+
+cat <<<EOF > ~/.config/nvim/init.vim
+call plug#begin()
+" The default plugin directory will be as follows:
+"   - Vim (Linux/macOS): '~/.vim/plugged'
+"   - Vim (Windows): '~/vimfiles/plugged'
+"   - Neovim (Linux/macOS/Windows): stdpath('data') . '/plugged'
+" You can specify a custom plugin directory by passing it as the argument
+"   - e.g. `call plug#begin('~/.vim/plugged')`
+"   - Avoid using standard Vim directory names like 'plugin'
+
+" Make sure you use single quotes
+
+" vim-prettier, https://github.com/prettier/vim-prettier
+Plug 'prettier/vim-prettier', {
+  \ 'do': 'yarn install --frozen-lockfile --production',
+  \ 'for': ['javascript', 'typescript', 'css', 'less', 'scss', 'json', 'graphql', 'markdown', 'vue', 'svelte', 'yaml', 'html'] }
+
+" A (Neo)vim plugin for formatting code., https://github.com/sbdchd/neoformat
+"Plug 'sbdchd/neoformat'
+
+" Shorthand notation; fetches https://github.com/junegunn/vim-easy-align
+"Plug 'junegunn/vim-easy-align'
+
+" Any valid git URL is allowed
+"Plug 'https://github.com/junegunn/vim-github-dashboard.git'
+
+" Multiple Plug commands can be written in a single line using | separators
+"Plug 'SirVer/ultisnips' | Plug 'honza/vim-snippets'
+
+" On-demand loading
+"Plug 'preservim/nerdtree', { 'on': 'NERDTreeToggle' }
+"Plug 'tpope/vim-fireplace', { 'for': 'clojure' }
+
+" Using a non-default branch
+"Plug 'rdnetto/YCM-Generator', { 'branch': 'stable' }
+
+" Using a tagged release; wildcard allowed (requires git 1.9.2 or above)
+"Plug 'fatih/vim-go', { 'tag': '*' }
+
+" Plugin options
+"Plug 'nsf/gocode', { 'tag': 'v.20150303', 'rtp': 'vim' }
+
+" Plugin outside ~/.vim/plugged with post-update hook
+"Plug 'junegunn/fzf', { 'dir': '~/.fzf', 'do': './install --all' }
+
+" Unmanaged plugin (manually installed and updated)
+"Plug '~/my-prototype-plugin'
+
+" Initialize plugin system
+" - Automatically executes `filetype plugin indent on` and `syntax enable`.
+call plug#end()
+" You can revert the settings after the call like so:
+"   filetype indent off   " Disable file-type-specific indentation
+"   syntax off            " Disable syntax highlighting
+EOF
