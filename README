@@ -69,7 +69,7 @@ Plug 'prettier/vim-prettier', {
   \ 'for': ['javascript', 'typescript', 'css', 'less', 'scss', 'json', 'graphql', 'markdown', 'vue', 'svelte', 'yaml', 'html'] }
 
 " A (Neo)vim plugin for formatting code., https://github.com/sbdchd/neoformat
-"Plug 'sbdchd/neoformat'
+Plug 'sbdchd/neoformat'
 
 " Shorthand notation; fetches https://github.com/junegunn/vim-easy-align
 "Plug 'junegunn/vim-easy-align'
