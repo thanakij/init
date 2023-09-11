@@ -49,9 +49,6 @@ npm install -g create-next-app
 # https://github.com/junegunn/vim-plug#neovim
 sh -c 'curl -fLo "${XDG_DATA_HOME:-$HOME/.local/share}"/nvim/site/autoload/plug.vim --create-dirs \
        https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim'
-echo 'Run :PlugInstall under nvim'
-echo :UpdateRemotePlugins
-echo :Neoformat prettier
 
 cat <<<EOF > ~/.config/nvim/init.vim
 call plug#begin()
@@ -108,3 +105,7 @@ call plug#end()
 "   filetype indent off   " Disable file-type-specific indentation
 "   syntax off            " Disable syntax highlighting
 EOF
+
+echo 'Run :PlugInstall under nvim'
+echo :UpdateRemotePlugins
+echo :Neoformat prettier
