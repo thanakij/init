@@ -23,7 +23,7 @@ export LD_LIBRARY_PATH="${HOMEBREW_PREFIX}/lib:${LD_LIBRARY_PATH}"
 # VS Code extensions: aws, azure, docker, devcontainer, prettier, formatting toggle
 
 # AWS CLI
-brew install aws-cli
+brew install awscli
 # Session Manager plugin for the AWS CLI
 # - https://docs.aws.amazon.com/systems-manager/latest/userguide/session-manager-working-with-install-plugin.html#install-plugin-macos
 
