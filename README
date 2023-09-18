@@ -41,6 +41,17 @@ space login
 sudo gem install cocoapods
 sudo gem install activesupport -v 6.1.7.3
 
+# Flutter
+# https://docs.flutter.dev/get-started/install/macos
+sudo softwareupdate --install-rosetta --agree-to-license
+# https://stackoverflow.com/questions/72782659/installing-flutter-using-homebrew
+brew tap leoafarias/fvm
+brew install fvm
+# https://fvm.app/docs/guides/basic_commands/
+fvm install 3.13.4
+fvm global
+# https://github.com/fluttertools/sidekick
+
 # https://stackoverflow.com/a/50556334
 #npm install -g prettier@1.12.1
 
