@@ -60,7 +60,7 @@ fvm global
 # https://github.com/fluttertools/sidekick
 
 # https://stackoverflow.com/a/50556334
-#npm install -g prettier@1.12.1
+npm install -g prettier
 
 npm install -g create-next-app
 
