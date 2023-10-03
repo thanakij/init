@@ -33,6 +33,13 @@ brew install firebase-cli
 # Azure developer CLI
 curl -fsSL https://aka.ms/install-azd.sh | bash
 
+# Ruby
+# - https://stackoverflow.com/a/36485498
+brew install ruby-build
+brew install rbenv
+rbenv install 3.2.2
+rbenv global 3.2.2
+
 # Space CLI
 curl -fsSL https://deta.space/assets/space-cli.sh | sh
 space login
