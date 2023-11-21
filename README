@@ -20,6 +20,12 @@ export CPLUS_INCLUDE_PATH="${HOMEBREW_PREFIX}/Cellar/glib/2.76.3/lib/glib-2.0/in
 export LIBRARY_PATH="${HOMEBREW_PREFIX}/lib:${LIBRARY_PATH}"
 export LD_LIBRARY_PATH="${HOMEBREW_PREFIX}/lib:${LD_LIBRARY_PATH}"
 
+# https://stackoverflow.com/a/49689589
+#export PATH=/opt/homebrew/opt/libpq/bin:$PATH
+#export LDFLAGS=-L/opt/homebrew/opt/libpq/lib
+#export CPPFLAGS=-I/opt/homebrew/opt/libpq/include
+#export PKG_CONFIG_PATH=/opt/homebrew/opt/libpq/lib/pkgconfig
+
 # VS Code extensions: aws, azure, docker, devcontainer, prettier, formatting toggle
 
 # AWS CLI
