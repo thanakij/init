@@ -28,6 +28,9 @@ export LD_LIBRARY_PATH="${HOMEBREW_PREFIX}/lib:${LD_LIBRARY_PATH}"
 
 # VS Code extensions: aws, azure, docker, devcontainer, prettier, formatting toggle
 
+# Yarn
+npm install --global yarn
+
 # AWS CLI
 brew install awscli
 # Session Manager plugin for the AWS CLI
