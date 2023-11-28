@@ -10,6 +10,9 @@ chsh -s /opt/homebrew/bin/bash
 
 # https://gist.github.com/ChristopherA/a579274536aab36ea9966f301ff14f3f
 # https://github.com/Homebrew/homebrew-bundle
+# https://homebrew-file.readthedocs.io/en/latest/usage.html
+# - brew file set_repo -r <repository>
+# - brew file brew install <package>
 brew tap Homebrew/bundle
 brew bundle --file=./Brewfile
 
