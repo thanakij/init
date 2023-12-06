@@ -14,6 +14,7 @@ brew 'libpq' # https://stackoverflow.com/a/49689589
 brew 'vips' # https://stackoverflow.com/a/66676895
 tap 'hashicorp/tap' || true
 brew 'hashicorp/tap/terraform'
+brew 'lazygit' # https://www.lunarvim.org/docs/installation
 #brew 'jenkins'
 #brew 'wget'
 #brew 'graphviz'
