@@ -10,7 +10,6 @@ brew 'node'
 tap 'neovim/neovim' || true
 brew 'neovim'
 brew 'java'
-brew 'rust'
 brew 'rustup-init'
 brew 'libpq' # https://stackoverflow.com/a/49689589
 brew 'vips' # https://stackoverflow.com/a/66676895
