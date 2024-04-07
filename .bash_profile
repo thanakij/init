@@ -35,7 +35,7 @@ export PATH=$HOMEBREW_PREFIX/opt/curl/bin:$PATH
 export PATH=$HOMEBREW_PREFIX/opt/libpq/bin:$PATH
 export PATH=$HOMEBREW_PREFIX/opt/node@20/bin:$PATH
 export PATH=$HOMEBREW_PREFIX/opt/openjdk/bin:$PATH
-#export PATH=$HOMEBREW_PREFIX/opt/postgresql@15/bin:$PATH
+export PATH=$HOMEBREW_PREFIX/opt/postgresql@15/bin:$PATH
 export PATH=~/.local/bin:$PATH
 export PATH=~/bin:$PATH
 source "$(brew --prefix)/share/google-cloud-sdk/path.bash.inc"
