@@ -71,7 +71,9 @@ export PKG_CONFIG_PATH=$HOMEBREW_PREFIX/opt/postgresql@15/lib/pkgconfig:$PKG_CON
 
 # load .env
 # - https://gist.github.com/mihow/9c7f559807069a03e302605691f85572#gistcomment-4298352
-set -a; source .env; set +a
+if [ -f .env ]; then
+  set -a; source .env; set +a
+fi
 
 # completion
 [[ -r "$HOMEBREW_PREFIX/etc/profile.d/bash_completion.sh" ]] && . "$HOMEBREW_PREFIX/etc/profile.d/bash_completion.sh"
