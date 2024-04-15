@@ -4,8 +4,8 @@ tap "homebrew/bundle"
 tap "homebrew/services"
 tap "homebrew/cask-fonts"
 tap "buo/cask-upgrade"
+tap "modularml/packages"
 tap "oven-sh/bun"
-brew "mas"
 
 brew "xz"
 brew "bash-completion@2"
@@ -19,6 +19,7 @@ brew "git"
 brew "grep" # https://superuser.com/a/419527
 brew "jq"
 brew "libpq" # https://stackoverflow.com/a/49689589
+brew "mas"
 brew "node@20"
 brew "openjdk"
 brew "openssl@1.1"

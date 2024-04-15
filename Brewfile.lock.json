@@ -1077,6 +1077,9 @@
       },
       "oven-sh/bun": {
         "revision": "52df6091d1331f3ba8a827c371f55e1bdbb49c39"
+      },
+      "modularml/packages": {
+        "revision": "6398ee7c45cbc9f4d081a9cc906aa880464dacbe"
       }
     },
     "cask": {
@@ -1091,7 +1094,7 @@
   "system": {
     "macos": {
       "sonoma": {
-        "HOMEBREW_VERSION": "4.2.17",
+        "HOMEBREW_VERSION": "4.2.18",
         "HOMEBREW_PREFIX": "/opt/homebrew",
         "Homebrew/homebrew-core": "api",
         "CLT": "15.1.0.0.1.1700200546",
