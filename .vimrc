@@ -29,19 +29,21 @@ set completeopt=menu,menuone,preview,noselect,noinsert
 let g:ale_completion_enabled = 1
 let g:ale_fix_on_save = 1
 let g:ale_linters = {
-\   'sh': ['shellcheck'],
+\   'go': ['gofmt'],
 \   'javascript': ['eslint'],
 \   'javascriptreact': ['eslint'],
 \   'rust': ['analyzer', 'rustc'],
 \   'typescript': ['eslint', 'tsserver'],
 \   'typescriptreact': ['eslint', 'tsserver'],
+\   'sh': ['shellcheck'],
 \}
 let g:ale_fixers = {
 \   '*': ['remove_trailing_lines', 'trim_whitespace'],
 \   'css': ['prettier'],
-\   'json': ['prettier'],
+\   'go': ['gofmt'],
 \   'javascript': ['eslint'],
 \   'javascriptreact': ['eslint'],
+\   'json': ['prettier'],
 \   'python': ['black', 'isort'],
 \   'rust': ['rustfmt'],
 \   'sh': ['shfmt'],
