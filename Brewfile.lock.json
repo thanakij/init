@@ -1264,7 +1264,8 @@
       "vscode-icons-team.vscode-icons": null,
       "eamodio.gitlens": null,
       "rust-lang.rust-analyzer": null,
-      "golang.go": null
+      "golang.go": null,
+      "HashiCorp.terraform": null
     }
   },
   "system": {
