@@ -28,6 +28,7 @@ brew "pyenv"
 brew "rustup-init"
 brew "shellcheck"
 brew "shfmt"
+brew "tfenv"
 brew "tree"
 brew "vim"
 brew "vips" # https://stackoverflow.com/a/66676895
