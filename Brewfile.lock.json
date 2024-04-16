@@ -1249,7 +1249,8 @@
       "vivaxy.vscode-conventional-commits": null,
       "vscode-icons-team.vscode-icons": null,
       "eamodio.gitlens": null,
-      "rust-lang.rust-analyzer": null
+      "rust-lang.rust-analyzer": null,
+      "golang.go": null
     }
   },
   "system": {
