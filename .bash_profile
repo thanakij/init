@@ -1,6 +1,6 @@
 # functions
 parse_git_branch() {
-  git branch 2> /dev/null | sed -e '/^[^*]/d' -e 's/* \(.*\)/ (\1)/'
+  git branch 2>/dev/null | sed -e '/^[^*]/d' -e 's/* \(.*\)/ (\1)/'
 }
 
 # evals
@@ -27,9 +27,11 @@ export HISTCONTROL=ignoreboth:erasedups
 #export JAVA_HOME=$HOMEBREW_PREFIX/Cellar/openjdk/20/
 #export JAVA_HOME=/Users/thanakij/Library/Java/JavaVirtualMachines/corretto-11.0.19/Contents/Home/
 #export ANDROID_HOME=~/Library/Android/sdk
+export MODULAR_HOME=~/.modular
 
 # PATH
 #export PATH=$ANDROID_HOME/platform-tools:$PATH
+export PATH=$MODULAR_HOME/pkg/packages.modular.com_mojo/bin:$PATH
 #export PATH=~/Library/Python/3.9/bin:$PATH
 export PATH=$HOMEBREW_PREFIX/opt/curl/bin:$PATH
 export PATH=$HOMEBREW_PREFIX/opt/libpq/bin:$PATH
@@ -55,6 +57,7 @@ export CPPFLAGS=""
 # brew info curl
 LDFLAGS+=" -L$HOMEBREW_PREFIX/opt/curl/lib"
 CPPFLAGS+=" -I$HOMEBREW_PREFIX/opt/curl/include"
+export PKG_CONFIG_PATH=$HOMEBREW_PREFIX/opt/curl/lib/pkgconfig:$PKG_CONFIG_PATH
 # brew info libpq
 LDFLAGS+=" -L$HOMEBREW_PREFIX/opt/libpq/lib"
 CPPFLAGS+=" -I$HOMEBREW_PREFIX/opt/libpq/include"
@@ -72,7 +75,9 @@ export PKG_CONFIG_PATH=$HOMEBREW_PREFIX/opt/postgresql@15/lib/pkgconfig:$PKG_CON
 # load .env
 # - https://gist.github.com/mihow/9c7f559807069a03e302605691f85572#gistcomment-4298352
 if [ -f .env ]; then
-  set -a; source .env; set +a
+  set -a
+  source .env
+  set +a
 fi
 
 # completion
