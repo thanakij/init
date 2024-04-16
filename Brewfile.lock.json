@@ -1203,7 +1203,9 @@
       "ms-toolsai.vscode-jupyter-slideshow": null,
       "redhat.vscode-yaml": null,
       "vivaxy.vscode-conventional-commits": null,
-      "vscode-icons-team.vscode-icons": null
+      "vscode-icons-team.vscode-icons": null,
+      "eamodio.gitlens": null,
+      "rust-lang.rust-analyzer": null
     }
   },
   "system": {
