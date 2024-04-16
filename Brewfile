@@ -25,6 +25,8 @@ brew "oven-sh/bun/bun"
 brew "postgresql@15"
 brew "pyenv"
 brew "rustup-init"
+brew "shellcheck"
+brew "shfmt"
 brew "tree"
 brew "vim"
 brew "vips" # https://stackoverflow.com/a/66676895

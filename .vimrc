@@ -29,11 +29,12 @@ set completeopt=menu,menuone,preview,noselect,noinsert
 let g:ale_completion_enabled = 1
 let g:ale_fix_on_save = 1
 let g:ale_linters = {
+\   'sh': ['shellcheck'],
 \   'javascript': ['eslint'],
 \   'javascriptreact': ['eslint'],
+\   'rust': ['analyzer'],
 \   'typescript': ['eslint', 'tsserver'],
 \   'typescriptreact': ['eslint', 'tsserver'],
-\   'rust': ['analyzer'],
 \}
 let g:ale_fixers = {
 \   '*': ['remove_trailing_lines', 'trim_whitespace'],
@@ -41,10 +42,12 @@ let g:ale_fixers = {
 \   'json': ['prettier'],
 \   'javascript': ['eslint'],
 \   'javascriptreact': ['eslint'],
-\   'typescript': ['eslint'],
-\   'typescriptreact': ['eslint'],
 \   'python': ['black', 'isort'],
 \   'rust': ['rustfmt'],
+\   'sh': ['shfmt'],
+\   'typescript': ['eslint'],
+\   'typescriptreact': ['eslint'],
+\   'yaml': ['prettier'],
 \}
 " https://github.com/dense-analysis/ale/blob/master/doc/ale-javascript.txt
 " https://github.com/dense-analysis/ale/blob/master/doc/ale-python.txt
