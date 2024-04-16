@@ -54,6 +54,8 @@ let g:ale_fixers = {
 " https://github.com/dense-analysis/ale/blob/master/doc/ale-javascript.txt
 " https://github.com/dense-analysis/ale/blob/master/doc/ale-python.txt
 let g:ale_python_isort_options = '--profile black'
+" https://www.mankier.com/1/shfmt#Options
+let g:ale_sh_shfmt_options = '--indent 2'
 
 " https://blog.ffff.lt/posts/typescript-and-ale/
 "let g:ale_sign_error = "🐛"
