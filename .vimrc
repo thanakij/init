@@ -32,7 +32,7 @@ let g:ale_linters = {
 \   'sh': ['shellcheck'],
 \   'javascript': ['eslint'],
 \   'javascriptreact': ['eslint'],
-\   'rust': ['analyzer'],
+\   'rust': ['analyzer', 'rustc'],
 \   'typescript': ['eslint', 'tsserver'],
 \   'typescriptreact': ['eslint', 'tsserver'],
 \}
