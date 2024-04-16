@@ -14,6 +14,7 @@ brew "dive"
 brew "docker-completion"
 brew "docker-slim"
 brew "git"
+brew "go"
 brew "grep" # https://superuser.com/a/419527
 brew "jq"
 brew "libpq" # https://stackoverflow.com/a/49689589
