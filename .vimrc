@@ -32,11 +32,12 @@ let g:ale_linters = {
 \   'go': ['gofmt'],
 \   'javascript': ['eslint'],
 \   'javascriptreact': ['eslint'],
+\   'python': ['pyright'],
 \   'rust': ['analyzer', 'rustc'],
+\   'sh': ['shellcheck'],
 \   'terraform': ['terraform'],
 \   'typescript': ['eslint', 'tsserver'],
 \   'typescriptreact': ['eslint', 'tsserver'],
-\   'sh': ['shellcheck'],
 \}
 let g:ale_fixers = {
 \   '*': ['remove_trailing_lines', 'trim_whitespace'],
@@ -45,6 +46,7 @@ let g:ale_fixers = {
 \   'javascript': ['eslint'],
 \   'javascriptreact': ['eslint'],
 \   'json': ['prettier'],
+\   'jsonc': ['prettier'],
 \   'python': ['black', 'isort'],
 \   'rust': ['rustfmt'],
 \   'sh': ['shfmt'],
