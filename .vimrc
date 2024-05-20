@@ -61,6 +61,15 @@ let g:ale_python_isort_options = '--profile black'
 " https://www.mankier.com/1/shfmt#Options
 let g:ale_sh_shfmt_options = '--indent 2'
 
+" Configure Neural like so in Vimscript
+let g:neural = {
+\   'source': {
+\       'openai': {
+\           'api_key': $OPENAI_API_KEY,
+\       },
+\   },
+\}
+
 " https://blog.ffff.lt/posts/typescript-and-ale/
 "let g:ale_sign_error = "🐛"
 
@@ -85,6 +94,11 @@ call plug#begin()
 Plug 'dense-analysis/ale' " https://github.com/dense-analysis/ale#vim-plug
 "Plug 'rust-lang/rust.vim' " https://github.com/rust-lang/rust.vim#vim-plug
 "Plug 'vim-syntastic/syntastic' " https://github.com/rust-lang/rust.vim#vim-plug
+
+" https://github.com/dense-analysis/neural#vim-plug
+Plug 'dense-analysis/neural'
+Plug 'muniftanjim/nui.nvim'
+Plug 'elpiloto/significant.nvim'
 
 " Shorthand notation; fetches https://github.com/junegunn/vim-easy-align
 "Plug 'junegunn/vim-easy-align'
