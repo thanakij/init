@@ -1198,6 +1198,8 @@
         }
       },
       "stripe/stripe-cli/stripe": {
+        "version": "1.19.5",
+        "bottle": false
       },
       "helm": {
         "version": "3.15.0",
@@ -1301,7 +1303,11 @@
       "HashiCorp.terraform": null,
       "Continue.continue": null,
       "ms-vscode.vscode-node-azure-pack": null,
-      "AndrewButson.vscode-openai": null
+      "AndrewButson.vscode-openai": null,
+      "formulahendry.code-runner": null,
+      "GrapeCity.gc-excelviewer": null,
+      "Gruntfuggly.todo-tree": null,
+      "hediet.vscode-drawio": null
     }
   },
   "system": {
