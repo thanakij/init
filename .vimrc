@@ -57,6 +57,7 @@ let g:ale_fixers = {
 \}
 let g:ale_virtualtext_cursor = 'current'
 " https://github.com/dense-analysis/ale/blob/master/doc/ale-javascript.txt
+let g:ale_python_black_options = '--line-length=120'
 " https://github.com/dense-analysis/ale/blob/master/doc/ale-python.txt
 let g:ale_python_isort_options = '--profile black'
 " https://www.mankier.com/1/shfmt#Options
