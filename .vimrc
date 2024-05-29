@@ -55,6 +55,7 @@ let g:ale_fixers = {
 \   'typescriptreact': ['eslint'],
 \   'yaml': ['prettier'],
 \}
+let g:ale_virtualtext_cursor = 'current'
 " https://github.com/dense-analysis/ale/blob/master/doc/ale-javascript.txt
 " https://github.com/dense-analysis/ale/blob/master/doc/ale-python.txt
 let g:ale_python_isort_options = '--profile black'
